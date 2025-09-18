@@ -1,46 +1,63 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
 
 public class PlatformerMovment : MonoBehaviour
 {
     public float movespeed;
+    private Animator spider;
     public float jumpHeight;
     public bool isGrounded = false;
-    public Rigidbody2D rb2d;
+    private Rigidbody2D rb2d;
+    private SpriteRenderer sr;
 
     private float _movement;
 
     void Start()
     {
-
+        spider = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         rb2d.linearVelocityX = _movement;
 
-    }
-        void OnCollisionStay2D(Collision2D collision)
+        if (_movement < -.1f)
         {
-            
-            if (collision.gameObject.tag == "Ground")
-            {
-                Debug.Log("Collided with the Ground!");
-               
-                isGrounded = true;
-            }
-        
-    }
-        void OnCollisionExit2D(Collision2D collision)
+            spider.SetBool("IsMoving", true);
+            sr.flipX = true;
+        }
+        else if (_movement > .1f)
         {
+            spider.SetBool("IsMoving", true);
+            sr.flipX = false;
+        }
+        else
+        {
+            spider.SetBool("IsMoving", false);
+        }
+    }
+    void OnCollisionStay2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.tag == "Ground")
+        {
+            Debug.Log("Collided with the Ground!");
+
+            isGrounded = true;
+        }
+
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == "Ground")
         {
             Debug.Log("left the Ground!");
 
             isGrounded = false;
         }
-        }
+    }
 
     public void Move(InputAction.CallbackContext ctx)
     {
