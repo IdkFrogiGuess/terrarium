@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spider - idol_0: 111228845566352069
+      Spider - idol_1: 4216109529021684941
+      Spider - idol_2: 5916709076412669652
+      Spider - idol_3: 4563699922647855059
+      Spider - idol_4: -6105372034256800204
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

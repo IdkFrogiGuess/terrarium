@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      burnt out torch_0: -3564299699026776140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
