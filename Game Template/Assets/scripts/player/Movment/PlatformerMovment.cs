@@ -9,9 +9,8 @@ public class PlatformerMovment : MonoBehaviour
     public bool isGrounded = false;
     private Rigidbody2D rb2d;
     private SpriteRenderer sr;
-
     private float _movement;
-
+  
     void Start()
     {
         spider = GetComponent<Animator>();
@@ -19,6 +18,7 @@ public class PlatformerMovment : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
+   
     void Update()
     {
         rb2d.linearVelocityX = _movement;
