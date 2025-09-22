@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rat boss healthbar_0: -2782957047985843809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
