@@ -25,7 +25,7 @@ public class Grappling : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (Physics2D.OverlapCircle(point, 0.1f, Grappleable))
@@ -39,7 +39,7 @@ public class Grappling : MonoBehaviour
                 dj.connectedAnchor = point;
             }
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(1))
         {
             isGrappling = false;
             lr.enabled = false;
