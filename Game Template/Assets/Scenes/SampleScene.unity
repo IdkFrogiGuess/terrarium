@@ -405,6 +405,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &555441592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555441570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1693492b81399344893c5ec877d625f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2d: {fileID: 0}
+  spider: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +633,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1963358222 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1958128440435851043, guid: 99167f86ecc546d44a56ea39387957a0, type: 3}
+  m_PrefabInstance: {fileID: 6775239072461121280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963358229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963358222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80012b1ed34269488c9f2dfff3dd200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 555441570}
+  damage: 5
 --- !u!1001 &1966771978428126915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -738,6 +772,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3075557162151096709, guid: 155ccff6ff1faf843baf1722bc4ae738, type: 3}
       insertIndex: -1
       addedObject: {fileID: 555441581}
+    - targetCorrespondingSourceObject: {fileID: 3075557162151096709, guid: 155ccff6ff1faf843baf1722bc4ae738, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 555441592}
   m_SourcePrefab: {fileID: 100100000, guid: 155ccff6ff1faf843baf1722bc4ae738, type: 3}
 --- !u!1001 &6775239072461121280
 PrefabInstance:
@@ -753,7 +790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1958128440435851043, guid: 99167f86ecc546d44a56ea39387957a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5282565808329212883, guid: 99167f86ecc546d44a56ea39387957a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -798,7 +835,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1958128440435851043, guid: 99167f86ecc546d44a56ea39387957a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1963358229}
   m_SourcePrefab: {fileID: 100100000, guid: 99167f86ecc546d44a56ea39387957a0, type: 3}
 --- !u!1001 &8767854743037954824
 PrefabInstance:
