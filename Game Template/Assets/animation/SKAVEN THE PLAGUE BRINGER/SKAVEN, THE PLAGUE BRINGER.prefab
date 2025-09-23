@@ -14,13 +14,15 @@ GameObject:
   - component: {fileID: 3855498509622671905}
   - component: {fileID: 984933964122440742}
   - component: {fileID: 7843238402896126477}
-  m_Layer: 0
+  - component: {fileID: 1076667907816991498}
+  - component: {fileID: 8724888999589228871}
+  m_Layer: 6
   m_Name: SKAVEN, THE PLAGUE BRINGER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5282565808329212883
 Transform:
   m_ObjectHideFlags: 0
@@ -103,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c581a56062aa44aac2a514276652ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 15
+  MoveSpeed: 17
 --- !u!50 &3855498509622671905
 Rigidbody2D:
   serializedVersion: 5
@@ -199,3 +201,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1076667907816991498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958128440435851043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80012b1ed34269488c9f2dfff3dd200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  damage: 5
+--- !u!114 &8724888999589228871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958128440435851043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e93a0ef465d86459bf72188251a04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 2
+  self: {fileID: 1958128440435851043}

@@ -15,7 +15,9 @@ GameObject:
   - component: {fileID: 8454150699194248794}
   - component: {fileID: 3057108140597971648}
   - component: {fileID: 8365785403253614695}
-  m_Layer: 3
+  - component: {fileID: 3165122674486547352}
+  - component: {fileID: 1551346631774680321}
+  m_Layer: 6
   m_Name: fly
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -206,3 +208,31 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!114 &3165122674486547352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899459771412627022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e93a0ef465d86459bf72188251a04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 1
+  self: {fileID: 1899459771412627022}
+--- !u!114 &1551346631774680321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899459771412627022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80012b1ed34269488c9f2dfff3dd200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  damage: 1

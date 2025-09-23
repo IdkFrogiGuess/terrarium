@@ -15,7 +15,9 @@ GameObject:
   - component: {fileID: 8307669312291394399}
   - component: {fileID: 6169714281685979055}
   - component: {fileID: 8703885958748200519}
-  m_Layer: 0
+  - component: {fileID: 5932426928008541558}
+  - component: {fileID: 1472883115917956050}
+  m_Layer: 6
   m_Name: Snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,3 +218,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5932426928008541558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191205178404048508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80012b1ed34269488c9f2dfff3dd200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  damage: 1
+--- !u!114 &1472883115917956050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191205178404048508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9e93a0ef465d86459bf72188251a04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 3
+  self: {fileID: 7191205178404048508}
